@@ -10,7 +10,7 @@
 \LoadClass[12pt, a4paper]{article}
 \RequirePackage[a4paper, margin=0.6in]{geometry}
 \RequirePackage[hidelinks, pdfusetitle]{hyperref}
-\RequirePackage{fontspec, xcolor, sectsty, setspace, multicol}
+\RequirePackage{fontspec, xcolor, sectsty, setspace, multicol, titlesec}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Make Title
@@ -31,6 +31,22 @@
     {\texttt \email} $\bullet$ {\texttt \phone} $\bullet$ {\texttt \domain}
     {\rule{\linewidth}{0.5mm}}
   \end{center} 
+}
+
+%%%%%
+% Section
+%%%%%%
+\titlespacing\section{0pt}{0pt}{0pt}
+
+%%%%
+% Education
+%%%%
+\newcommand\education[4]{\gdef\education{
+\noindent
+\textbf{#1} \hfill \textit{#2} \\
+{\small #3}  \\
+\textit{#4}
+}
 }
 
 %%%%%%%%%%%%%%%%%

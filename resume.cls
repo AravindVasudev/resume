@@ -36,7 +36,7 @@
 %%%%%
 % Section
 %%%%%%
-\titlespacing\section{0pt}{0pt}{0pt}
+\titlespacing\section{0pt}{5pt}{0pt}
 
 %%%%
 % Education

@@ -5,12 +5,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resume}[2019/09/1 Resume]
+\ProvidesClass{resume}%[2019/09/1 Resume]
 
 \LoadClass[12pt, a4paper]{article}
 \RequirePackage[a4paper, margin=0.6in]{geometry}
 \RequirePackage[hidelinks, pdfusetitle]{hyperref}
-\RequirePackage{fontspec, xcolor, sectsty, setspace}
+\RequirePackage{fontspec, xcolor, sectsty, setspace, multicol}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Make Title
@@ -30,7 +30,10 @@
     {\Huge \scshape \@author} \\
     {\texttt \email} $\bullet$ {\texttt \phone} $\bullet$ {\texttt \domain}
     {\rule{\linewidth}{0.5mm}}
-  \end{center}
-
-  
+  \end{center} 
 }
+
+%%%%%%%%%%%%%%%%%
+%% Misc
+%%%%%%%%%%%%%%%%%
+\pagenumbering{gobble}

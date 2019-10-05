@@ -8,7 +8,7 @@
 \ProvidesClass{resume}%[2019/09/1 Resume]
 
 \LoadClass[9pt, letterpaper]{article}
-\RequirePackage[a4paper, margin=0.6in]{geometry}
+\RequirePackage[letterpaper, margin=0.5in]{geometry}
 \RequirePackage[hidelinks, pdfusetitle]{hyperref}
 \RequirePackage{fontspec, xcolor, sectsty, setspace, multicol, titlesec}
 

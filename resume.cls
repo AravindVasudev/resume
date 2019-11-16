@@ -7,7 +7,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}%[2019/09/1 Resume]
 
-\LoadClass[9pt, letterpaper]{article}
+\LoadClass[7pt, letterpaper]{article}
 \RequirePackage[letterpaper, margin=0.5in]{geometry}
 \RequirePackage[hidelinks, pdfusetitle]{hyperref}
 \RequirePackage{fontspec, xcolor, sectsty, setspace, multicol, titlesec}
@@ -24,22 +24,23 @@
 \newcommand\email[1]{\gdef\email{\href{mailto:#1}{#1}}}
 \newcommand\phone[2]{\gdef\phone{\href{tel:#1}{#2}}}
 \newcommand\domain[2]{\gdef\domain{\href{#1}{#2}}}
+\newcommand\github[2]{\gdef\github{\href{#1}{#2}}}
 
 \renewcommand{\maketitle}{
   \begin{center}
     {\Huge \scshape \@author} \\
-   % {\texttt \email} $\bullet$ {\texttt \phone} $\bullet$ {\texttt \domain}
-   
-    {\texttt \email} \hfill {\texttt \phone}\\
-    {\texttt \email} \hfill {\texttt \phone}
+    \underline{\texttt \github} \hfill {\texttt \phone}\\
+    \underline{\texttt \domain} \hfill {\texttt \email}
     %{\rule{\linewidth}{0.5mm}}
-  \end{center} 
+  \end{center}
 }
 
 %%%%%
 % Section
 %%%%%%
 \titlespacing\section{0pt}{5pt}{0pt}
+
+%\renewcommand{\baselinestretch}{0.9}
 
 %%%%
 % Education

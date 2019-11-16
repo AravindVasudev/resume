@@ -28,8 +28,11 @@
 \renewcommand{\maketitle}{
   \begin{center}
     {\Huge \scshape \@author} \\
-    {\texttt \email} $\bullet$ {\texttt \phone} $\bullet$ {\texttt \domain}
-    {\rule{\linewidth}{0.5mm}}
+   % {\texttt \email} $\bullet$ {\texttt \phone} $\bullet$ {\texttt \domain}
+   
+    {\texttt \email} \hfill {\texttt \phone}\\
+    {\texttt \email} \hfill {\texttt \phone}
+    %{\rule{\linewidth}{0.5mm}}
   \end{center} 
 }
 

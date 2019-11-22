@@ -31,7 +31,6 @@
     {\Huge \scshape \@author} \\
     \underline{\texttt \github} \hfill {\texttt \phone}\\
     \underline{\texttt \domain} \hfill {\texttt \email}
-    %{\rule{\linewidth}{0.5mm}}
   \end{center}
 }
 

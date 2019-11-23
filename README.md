@@ -1,4 +1,4 @@
 # Resume
-Latex source for my resume.
+Latex source of my resume.
 
 ![Aravind Vasudevan's Resume](./resume-image.png)

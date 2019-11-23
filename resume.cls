@@ -39,8 +39,6 @@
 %%%%%%
 \titlespacing\section{0pt}{5pt}{0pt}
 
-%\renewcommand{\baselinestretch}{0.9}
-
 %%%%
 % Education
 %%%%

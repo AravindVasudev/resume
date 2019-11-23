@@ -25,12 +25,12 @@
 \newcommand\phone[2]{\gdef\phone{\href{tel:#1}{#2}}}
 \newcommand\domain[2]{\gdef\domain{\href{#1}{#2}}}
 \newcommand\github[2]{\gdef\github{\href{#1}{#2}}}
+\newcommand\linkedin[2]{\gdef\linkedin{\href{#1}{#2}}}
 
 \renewcommand{\maketitle}{
   \begin{center}
     {\Huge \scshape \@author} \\
-    \underline{\texttt \github} \hfill {\texttt \phone}\\
-    \underline{\texttt \domain} \hfill {\texttt \email}
+    \underline{\texttt \github} | {\texttt \phone} | {\texttt \email} | \underline{\texttt \domain}
   \end{center}
 }
 

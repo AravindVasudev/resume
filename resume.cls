@@ -8,7 +8,7 @@
 \ProvidesClass{resume}%[2019/09/1 Resume]
 
 \LoadClass[7pt, letterpaper]{article}
-\RequirePackage[letterpaper, margin=0.5in]{geometry}
+\RequirePackage[letterpaper, margin=0.4in]{geometry}
 \RequirePackage[hidelinks, pdfusetitle]{hyperref}
 \RequirePackage{fontspec, xcolor, sectsty, setspace, multicol, titlesec}
 
@@ -29,9 +29,11 @@
 
 \renewcommand{\maketitle}{
   \begin{center}
-    {\Huge \scshape \@author} \\
-    \underline{\texttt \github} | {\texttt \phone} | {\texttt \email} | \underline{\texttt \domain}
+    {\Huge \scshape \@author}
   \end{center}
+  \vspace{-3mm}
+  \noindent
+  \underline{\texttt \github} | {\texttt \phone} | {\texttt \email} | \underline{\texttt \domain}
 }
 
 %%%%%

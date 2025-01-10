@@ -19,11 +19,20 @@
 \titlerule[0.2pt]
 \noindent
 \\
+\textbf{Meta Platforms, Inc.} \hfill \textit{Sunnyvale, CA} \\
+{\small Software Engineer} \hfill \textit{\small April 2024 - Present}
+\begin{itemize}
+  \item Decreased ad retrieval service memory usage by 1.57GB by optimizing ad data fields, enabling efficient prediction models.
+  \item Implemented efficient memory shedding strategy reducing OOMs under load by $\sim$90\% improving availability in Q4 2024.
+  \item Designed a C++ compile-time flag to switch service data model based on build type which resulted in 1GB of memory savings.
+  \item Enhanced the ad retrival querying flow to support a new request type, enabling new predictive modelling experiments.
+\end{itemize}
 \textbf{Google LLC} \hfill \textit{Mountain View, CA} \\
-{\small Software Engineer III} \hfill \textit{\small November 2021 - Present}
+{\small Software Engineer III} \hfill \textit{\small November 2021 - April 2024}
 \begin{itemize}
   \item Mitigated resource exhaustion-related outages in LUCI CV for chromium/chromiumos related projects by architecting a redis-based quota manager that limits the number of concurrent presubmit runs per user.
-  \item Optimized gclient sync no-op runtime by ~51.4\% in windows that improved chromium developer experience.
+  \item Updated LUCI CV authorization to support ACLs from linked google-chromium email accounts simplifying ACL management.
+  \item Optimized gclient sync no-op runtime by 51.4\% in windows that improved chromium developer experience.
   \item Redesigned depot\_tools to parse git submodules that unblocks chromium to move away from outdated DEPS.
   \item Reduced user frustration with git-repo by devising a condensed error summary UX that provided actionable next steps.
   \item Aided in master\textrightarrow main migration within the chromium project by contributing branch redirection feature to codesearch.
@@ -55,6 +64,12 @@
   \item Minimized dependency among teams by decoupling Zoho CRM into several compile-time independent components.
   \item Architected an observable-based inter-service communication framework that can resolve function calls at runtime.
 \end{itemize}
+\textbf{Tata Consultancy Services} \hfill \textit{Chennai, India} \\
+{\small Project Intern} \hfill \textit{\small June 2017 - July 2017}
+\begin{itemize}
+  \item Prototyped a chatbot to simplify data lookup in Planatics, a financial data management tool, using RASA NLU and flask.
+  \item Separated the chatbot service from the tool using microservice design-pattern and REST API for service interaction.
+\end{itemize}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Education}
@@ -63,42 +78,22 @@
 \\
 \textbf{Carnegie Mellon University -- School of Computer Science} \hfill \textit{Pittsburgh, PA} \\
 {\small Master of Software Engineering -- Scalable Systems} \hfill \textit{\small December 2020}\\
-\textit{\textbf{Coursework:} Distributed Systems, DevOps, Engineering Data Intensive Scalable Systems, Architecture for Software Systems, Introduction to Machine Learning, Analysis of Software Artifacts, Introduction to Computer Systems.}\\
+\textit{\textbf{Coursework:} Distributed Systems, DevOps, Engineering Data Intensive Scalable Systems, Architecture for Software Systems.}\\
 \textit{\textbf{Teaching Assistantship:} 17323/17623: Quality Assurance. October 2020 - December 2020.}\\
+\textit{\textbf{Capstone Project:} Led a team of 5 and architected an extensible bridge library that allowed Rebion Inc.'s Blinq devices to communicate with any EHR system using custom configurations.}\\
 \\
 \textbf{Anna University} \hfill \textit{Chennai, India} \\
 {\small Bachelor of Engineering -- Computer Science \& Engineering} \hfill \textit{\small May 2018}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Academic Projects}
-\titlerule[0.2pt]
-\noindent
-\\
-\textbf{Distributed Bitcoin Miner} \hfill \textit{CMU Fall 2020}
-\begin{itemize}
-  \item Modeled an application layer protocol on top of UDP with resilience, liveness, and packet sequencing.
-  \item Developed the protocol to be connection-oriented and support the client-server model natively.
-  \item Implemented a distributed bitcoin miner system on top of this protocol with fault-tolerance.
-  \item Designed the miner to be the client and the server to load-balance mining jobs using SRTF scheduling and chunking.
-\end{itemize}
-\textbf{Scalable Ecommerce Web Service} \hfill \textit{CMU Spring 2020}
-\begin{itemize}
-  \item Engineered a highly-scalable e-commerce app that can serve over a million requests/minute using EC2 and load balancer.
-  \item Handled search functionality for around a million products using AWS RDS for storage and AWS ElastiCache for caching.
-  \item Improved response time to under a second by devising a distributed in-memory caching framework.
-  \item Synchronized the distributed cache using the check-on-use invalidation strategy and handled overflow using LRU eviction.
-\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Skills}
 \titlerule[0.2pt]
 \noindent
 \\
-\textbf{Programming Languages:} Python, Java, Javascript, C, Bash, Go. \\
-\textbf{Backend \& Database:} Node.js, Struts, Spring, Flask, MySQL, MongoDB, Redis, RabbitMQ. \\
+\textbf{Programming Languages:} C++, Python, Javascript/Typecript, Java, SQL, Bash, Go. \\
+\textbf{Web:} Node.js, Spring, Flask, Struts, Thrift, Protobuf, RPC, Angular. \\
+\textbf{Databases \& Storage:} MySQL, Spanner, Redis, MongoDB, HDFS, RabbitMQ, S3. \\
 \textbf{DevOps:} Docker, Jenkins, Vagrant, AWS stack, Ansible, Kubernetes. \\
-\textbf{Frontend:} Angular, JQuery, SCSS, HTML, CSS.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

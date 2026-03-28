@@ -22,10 +22,12 @@
 \textbf{Meta Platforms, Inc.} \hfill \textit{Sunnyvale, CA} \\
 {\small Software Engineer} \hfill \textit{\small April 2024 - Present}
 \begin{itemize}
-  \item Decreased ad retrieval service memory usage by 1.57GB by optimizing ad data fields, enabling efficient prediction models.
+  \item Unblocked the launch of a new collapsed ads service by designing a cAST-based gflag tracing tool that reduced memory usage by 7GB and fixed revenue regressions.
+  \item Wrote claude skills to automate identification and clearing unused memory which reduced our ad memory usage by 3GB.
+  \item Introduced a country-based sharding strategy for the ad retrieval service which reduced memory usage by 5GB.
   \item Implemented efficient memory shedding strategy reducing OOMs under load by $\sim$90\% improving availability in Q4 2024.
-  \item Designed a C++ compile-time flag to switch service data model based on build type which resulted in 1GB of memory savings.
-  \item Enhanced the ad retrival querying flow to support a new request type, enabling new predictive modelling experiments.
+  \item Designed a C++ compile-time flag to switch service data model based on build type which resulted in 3GB of memory savings.
+  \item Offset field cleanup flow from online to offline service which reduced our network cost by 8.1\%.
 \end{itemize}
 \textbf{Google LLC} \hfill \textit{Mountain View, CA} \\
 {\small Software Engineer III} \hfill \textit{\small November 2021 - April 2024}
@@ -64,12 +66,12 @@
   \item Minimized dependency among teams by decoupling Zoho CRM into several compile-time independent components.
   \item Architected an observable-based inter-service communication framework that can resolve function calls at runtime.
 \end{itemize}
-\textbf{Tata Consultancy Services} \hfill \textit{Chennai, India} \\
-{\small Project Intern} \hfill \textit{\small June 2017 - July 2017}
-\begin{itemize}
-  \item Prototyped a chatbot to simplify data lookup in Planatics, a financial data management tool, using RASA NLU and flask.
-  \item Separated the chatbot service from the tool using microservice design-pattern and REST API for service interaction.
-\end{itemize}
+% \textbf{Tata Consultancy Services} \hfill \textit{Chennai, India} \\
+% {\small Project Intern} \hfill \textit{\small June 2017 - July 2017}
+% \begin{itemize}
+%   \item Prototyped a chatbot to simplify data lookup in Planatics, a financial data management tool, using RASA NLU and flask.
+%   \item Separated the chatbot service from the tool using microservice design-pattern and REST API for service interaction.
+% \end{itemize}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Education}
@@ -90,8 +92,8 @@
 \titlerule[0.2pt]
 \noindent
 \\
-\textbf{Programming Languages:} C++, Python, Javascript/Typecript, Java, SQL, Bash, Go. \\
-\textbf{Web:} Node.js, Spring, Flask, Struts, Thrift, Protobuf, RPC, Angular. \\
+\textbf{Programming Languages:} C++, Python, Javascript/Typescript, Java, SQL, Bash, Go. \\
+\textbf{Web:} React, Thrift, Protobuf, RPC, Spring, Flask, Angular, Structs. \\
 \textbf{Databases \& Storage:} MySQL, Spanner, Redis, MongoDB, HDFS, RabbitMQ, S3. \\
 \textbf{DevOps:} Docker, Jenkins, Vagrant, AWS stack, Ansible, Kubernetes. \\
 
